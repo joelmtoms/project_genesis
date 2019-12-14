@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+        body{
+            background-image:url("logo.jpg");
+            background-size: cover;
+        }
+        div{
+            position: relative;
+            padding-left: 120px;
+            padding-top: 130px;
+            color:white;
+        }
+        p{
+            font-size: 20px;
+        }
+        #button { 
+            background-color: purple; 
+            color: white; 
+            padding: 14px 20px; 
+            margin: 8px 0; 
+            border: none; 
+            cursor: pointer; 
+        } 
+        #button:hover { 
+            opacity: 0.8;
+        }
+    </style>
+    </head>
+    <body>
+        <div>
+            <img src="redhatlogo.png" style="width:100px; height: 100px;">
+            <span style="font-size: 80px;">R3DHATS</span><br>
+            <h2>Administrator Details Form</h2>
+            <form action="savedb.php" method="post">
+                <p>First Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="fname" pattern="[A-Za-z].{3,}" title="Must be Alpahbetic" required></p>
+                <p>Last Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="lname" pattern="[A-Za-z].{3,}" title="Must be Alpahbetic" required></p>
+                <p>DOB:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="date" name="dob" required></p>
+                <p>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="email" name="email" required></p>
+                <p>Designation:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="text" name="desig" title="Must be Alpahbetic" required></p>
+                <p>Years of Service:&nbsp;&nbsp;
+                <input type="text" name="yos" pattern="(?=.*[1-9]).{1,2}" title="Must be at most a 2-digit number" required></p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" id="button" value="Submit" name="submit">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="reset" id="button" name="reset">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Create Password</title>
+        <style>
+            body{
+                background-image:url("logo.jpg");
+                background-size: cover;
+                background-repeat: no-repeat;    
+            }
+            #d1{
+                
+                color: white;
+                font-size: '500px';
+                padding-left: 200px;
+                padding-top: 90px;
+            }
+            #d3{
+                color:black;
+            }
+
+            #button { 
+                background-color: purple; 
+                color: white; 
+                padding: 14px 20px; 
+                margin: 8px 0; 
+                border: none; 
+                cursor: pointer; 
+            } 
+            /* set a hover effect for the button*/ 
+            #button:hover { 
+                opacity: 0.8; 
+            } 
+        </style>
+    </head>
+    <body>
+         <div id="d1">
+            <div>
+                <img src="redhatlogo.png" style="width:100px; height: 100px;">
+                <span style="font-size: 80px;">R3DHATS</span>
+            </div>
+            <form action="newpwd.php" method="post">
+                <label style="font-size: 20px;">E-Mail Address: </label>
+                <p></p>
+                <input id="t1" type="email" name="email" placeholder="Enter Email">  
+                <br> <br>
+                <label style="font-size: 20px;">New Password:</label>
+                <p></p>
+                <input id="t1" type="password" name="pswd" placeholder="Enter Password">  
+                <br> <br>
+                <label style="font-size: 20px;">Confirm Password:</label>
+                <p></p> 
+                <input id="t2" type="password" name="cnpswd" placeholder="Confirm Password">
+                <br><br>
+                <!--<button id="" onclick="location.href = Register.html;" style="width:auto;">Submit</button>-->
+                <input type="submit" id="button" value="Submit" name="submit">
+            </form>
+        </div>
+    </body>
+</html>

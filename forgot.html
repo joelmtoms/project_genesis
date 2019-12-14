@@ -1,0 +1,45 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Forgot Password</title>
+    </head>
+    <style> 
+        body{
+            background-image:url("logo.jpg");
+            background-size: cover;
+        }
+        button { 
+            background-color: purple; 
+            color: white; 
+            padding: 14px 20px; 
+            margin: 8px 0; 
+            border: none; 
+            cursor: pointer; 
+            width: 100%; 
+        } 
+        button:hover { 
+            opacity: 0.8; 
+        } 
+        #id00{
+            position: relative;
+            padding-left:200px;
+            padding-top: 165px;
+            color:white;
+    </style>
+    <body>
+        <div id='id00'>
+            <div>
+                <img src="redhatlogo.png" style="width:100px; height: 100px;">
+                <span style="font-size: 80px;">R3DHATS</span>
+            </div>
+            <h2>Don't worry! We are here to help you.</h2>
+            <h3>Since this is a two way authentication process, we will require you <br>to verify the details that you had entered during registration and <br>provide your unique code along with it.</h3> 
+            <button id="pro" onclick="location.href = Register.html;" style="width:auto;">Proceed to Authentication Form</button>
+        </div>
+        <script type="text/javascript">
+            document.getElementById("pro").onclick = function(){
+                location.href = "Register.html";
+            };
+        </script>
+    </body> 
+</html> 

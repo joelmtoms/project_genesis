@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Verify Unique Code</title>
+        <style>
+            body{
+                background-image: url("logo.jpg");
+                background-size: cover;
+               
+            }
+            #head{
+                position: relative;
+                padding-left:120px;
+                padding-top: 150px;
+                color:white;
+            }
+            #d1{                
+                color: white;
+                position: relative;
+                padding-left: 120px;
+                padding-top: 150px;
+            }
+            #d2{
+                color: white;
+                font-style: bold;
+                font-size: 20px;
+                position: relative;
+                padding-left: 120px; 
+            }
+            #d3{
+                position: relative;
+                padding-left: 120px;
+            }
+            #d4{
+                position: relative;
+                padding-left: 120px;
+            }
+                    /*set a style for the buttons*/ 
+            #button { 
+                background-color: purple; 
+                color: white; 
+                padding: 14px 20px;  
+                border: none; 
+                cursor: pointer; 
+                /*width: 100%;*/ 
+            } 
+            
+            /* set a hover effect for the button*/ 
+            #button:hover { 
+                opacity: 0.8; 
+            } 
+        </style>
+    </head>
+    <body>
+        <div id="head">
+                <img src="redhatlogo.png" style="width:100px; height: 100px;">
+                <span style="font-size: 80px;">R3DHATS</span>
+            </div>
+        <form action="resetpwd.php" method="post" >
+            <div id="d2">
+                <h2><p>Phase-1 Verfication Successful</p></h2>
+                <p></p>
+                <p>Kindly enter the security code provided after Registration</p>
+            </div>
+            <div id="d3">
+                <input type="text" name="code" required placeholder="Security Code" >
+            </div>
+            <p></p>
+            <div id="d4">
+                <!--<button onclick="document.getElementById('id01').style.display='block'" style="width:auto; font-size: 20px;">Proceed to Authentication Form</button>-->
+                <input type="submit" id="button" value="Proceed to Authentication Form" name="submit">
+            </div> 
+        </form>
+    </body>
+</html>
